@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [alexanderkaa](https://up.htmlacademy.ru/htmlcss/21/user/29334).
-* Наставник: `Неизвестно`.
+* Наставник: [Влад Башилов](https://htmlacademy.ru/profile/id167603)..
 
 ---
 
