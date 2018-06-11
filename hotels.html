@@ -6,7 +6,7 @@
   </head>
   <body>
       <header class="main-header">
-          <nav class="main-navigation">
+          <nav class="main-navigation" aria-label="Главное меню">
               <ul class="site-navigation">
                   <li><a href="information.html">Информация</a></li>
                   <li><a href="photo-video.html">Фото и видео</a></li>
@@ -18,20 +18,57 @@
       </header>
       <main class="container">
           <h1 class="visually-hidden">Подбор отеля в Седоне</h1>
-          <section class="search-form">
+          <section class="search-hotel-form">
               <h2 class="visually-hidden">Параметры подбора</h2>
-              <form action="hotels.html">
+              <form action="https://htmlacademy.ru/echo" method="POST">
                   <div class="infrastructure">
-                      <h3>Инфраструктура</h3>
+                      <h3>Инфраструктура:</h3>
                       <!-- Элементы формы -->
+                      <label for="infrastructure-pool">
+                        <input class="visually-hidden" type="checkbox" id="infrastructure-pool" name="infrastructure-pool-chekbox" value="yes" checked>
+                        <span class="checkbox-indicator"></span>
+                        Бассейн
+                      </label>
+                      <label for="infrastructure-parking">
+                        <input class="visually-hidden" type="checkbox" id="infrastructure-parking" name="infrastructure-parking-chekbox" value="yes">
+                        <span class="checkbox-indicator"></span>
+                        Парковка
+                      </label>
+                      <label for="infrastructure-wifi">
+                        <input class="visually-hidden" type="checkbox" id="infrastructure-wifi" name="infrastructure-parking-wifi-checkbox" value="yes">
+                        <span class="checkbox-indicator"></span>
+                        Wi-Fi
+                      </label>
                   </div>
                   <div class="housing-type">
-                      <h3>Тип жилья</h3>
+                      <h3>Тип жилья:</h3>
                       <!-- Элементы формы -->
+                      <label for="housing-type-hotel">
+                        <input class="visually-hidden" type="checkbox" id="housing-type-hotel" name="housing-type-hotel-chekbox" value="yes" checked>
+                        <span class="checkbox-indicator"></span>
+                        Отель
+                      </label>
+                      <label for="housing-type-motel">
+                        <input class="visually-hidden" type="checkbox" id="housing-type-motel" name="housing-type-motel-chekbox" value="yes" checked>
+                        <span class="checkbox-indicator"></span>
+                        Мотель
+                      </label>
+                      <label for="housing-type-apartments">
+                        <input class="visually-hidden" type="checkbox" id="housing-type-apartments" name="housing-type-apartments-chekbox" value="yes" checked>
+                        <span class="checkbox-indicator"></span>
+                        Апартаменты
+                      </label>
                   </div>
                   <div class="price">
-                      <h3>Стоимость в сутки</h3>
+                      <h3>Стоимость в сутки (Р):</h3>
                       <!-- Элементы формы -->
+                      <output name="price-from-output" aria-label="Текущее значение стоимости в сутки от">От 0</output>
+                      <output name="price-to-output" aria-label="Текущее значение стоимости в сутки до">До 3000</output>
+                      <label for="price-from" class="visually-hidden">Цена в сутки от</label>
+                      <input type="range" id="price-from" name="price-from-range">
+                      <label for="price-to" class="visually-hidden">Цена в сутки до</label>
+                      <input type="range" id="price-to" name="price-to-range">
+                      <button type="submit" name="search-form-submit">Показать</button>
                   </div>
               </form>
           </section>
@@ -122,7 +159,7 @@
           </div>
           <div class="copyright">
               <p>Website by</p>
-              <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип htmlacademy.ru">
+              <a href="http://htmlacademy.ru"><img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип htmlacademy.ru"></a>
           </div>
       </footer>
   </body>
