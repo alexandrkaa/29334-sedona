@@ -6,7 +6,7 @@
   </head>
   <body>
       <header class="main-header">
-          <nav class="main-navigation">
+          <nav class="main-navigation" aria-label="Главное меню">
               <ul class="site-navigation">
                   <li><a href="information.html">Информация</a></li>
                   <li><a href="photo-video.html">Фото и видео</a></li>
@@ -75,13 +75,32 @@
                   Укажите предполагаемые даты поездки,<br>
                   и мы покажем вам лучшие предложения гостиниц в седоне
               </p>
-              <a href="#" class="btn search-hotel-btn">Поиск гостиницы в Седоне</a>
-              <div class="search-form">
-                  <!-- Тут форма -->
+              <a href="hotels.html" class="btn search-hotel-btn">Поиск гостиницы в Седоне</a>
+              <div class="search-hotel-form">
+                <form action="https://htmlacademy.ru/echo" method="POST">
+                  <div class="search-hotel-form-date-in">
+                    <label for="search-hotel-form-date-in">Дата заезда:</label>
+                    <input type="text" id="search-hotel-form-date-field-in" name="search-hotel-form-date-in-field" value="24 апреля 2017">
+                    <span class="search-hotel-form-calendar-icon"></span>
+                  </div>
+                  <div class="search-hotel-form-date-out">
+                    <label for="search-hotel-form-date-out">Дата выезда:</label>
+                    <input type="text" id="search-hotel-form-date-field-out" name="search-hotel-form-date-out-field" value="4 июля 2017">
+                    <span class="search-hotel-form-calendar-icon"></span>
+                  </div>
+                  <div class="search-hotel-form-persons-num">
+                    <label for="search-hotel-form-persons-num-adults">Взрослые:</label>
+                    <input type="text" id="search-hotel-form-persons-num-adults" name="search-hotel-form-persons-num-adults-field" value="2">
+                    <label for="search-hotel-form-persons-num-childs">Дети:</label>
+                    <input type="text" id="search-hotel-form-persons-num-childs" name="search-hotel-form-persons-num-childs-field" value="0">
+                  </div>
+                  <button type="submit" name="search-hotel-form-submit">Найти</button>
+                </form>
               </div>
           </section>
           <section class="map">
               <h2 class="visually-hidden">Карта</h2>
+              <img src="img/map.jpg" width="1200" height="594" alt="Карта окрестностей Седоны">
               <!-- Скрипт или iframe для вывода карты -->
           </section>
       </main>
@@ -96,7 +115,7 @@
           </div>
           <div class="copyright">
               <p>Website by</p>
-              <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип htmlacademy.ru">
+              <a href="http://htmlacademy.ru"><img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип htmlacademy.ru"></a>
           </div>
       </footer>
   </body>
