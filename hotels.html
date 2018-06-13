@@ -62,12 +62,14 @@
                   <div class="price">
                       <h3>Стоимость в сутки (Р):</h3>
                       <!-- Элементы формы -->
-                      <output name="price-from-output" aria-label="Текущее значение стоимости в сутки от">От 0</output>
-                      <output name="price-to-output" aria-label="Текущее значение стоимости в сутки до">До 3000</output>
-                      <label for="price-from" class="visually-hidden">Цена в сутки от</label>
-                      <input type="range" id="price-from" name="price-from-range">
-                      <label for="price-to" class="visually-hidden">Цена в сутки до</label>
-                      <input type="range" id="price-to" name="price-to-range">
+                      <label for="price-from-output" class="visually-hidden">Цена в сутки от</label>
+                      <input type="text" name="price-from-output" placeholder="От 0">
+                      <label for="price-to-output" class="visually-hidden">Цена в сутки до</label>
+                      <input type="text" name="price-to-output" placeholder="До 3000">
+                      <div class="price-range">
+                        <span class="range-handle"></span>
+                        <span class="range-handle"></span>
+                      </div>
                       <button type="submit" name="search-hotel-form-submit">Показать</button>
                   </div>
               </form>

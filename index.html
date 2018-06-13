@@ -17,10 +17,11 @@
           </nav>
       </header>
       <main class="container">
-          <section class="intro">
-              <img src="img/sedona-intro-1200.jpg" width="1200" height="508" alt="Интро-заставка с изображением гор">
-              <h1>Седона - небольшой городок в Аризоне, заслуживающий большего</h1>
-          </section>
+          <img src="img/sedona-intro-1200.jpg" width="1200" height="508" alt="Интро-заставка с изображением гор">
+          <div>
+            <h1>Седона - небольшой городок в Аризоне, заслуживающий большего</h1>
+            <p class="lead">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+          </div>
           <section class="features">
               <h2 class="visually-hidden">Преимущества</h2>
               <div class="feature-item">
@@ -29,7 +30,6 @@
                   <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
                   <img src="img/features-real-city.jpg" width="800" height="256" alt="Фото города">
               </div>
-
               <div class="hints">
                   <h3 class="visually-hidden">Рекомендации</h3>
                   <div class="hint-item">
@@ -45,27 +45,28 @@
                       <p>Не только китайского, но и местного производства!</p>
                   </div>
               </div>
-
               <div class="feature-item">
                   <b class="lead">Там есть мост дьявола</b>
                   <p>- №2 -</p>
                   <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
                   <img src="img/devils-bridge.jpg" width="800" height="256" alt="Фото мост дьявола">
               </div>
-              <div class="feature-item">
-                  <b class="lead">Небольшая площадь</b>
-                  <p>- №3 -</p>
-                  <p>Все достопримечательности находятся очень близко</p>
-              </div>
-              <div class="feature-item">
-                  <b class="lead">Красивая дорога</b>
-                  <p>- №4 -</p>
-                  <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-              </div>
-              <div class="feature-item">
-                  <b class="lead">Мало туристов</b>
-                  <p>- №5 -</p>
-                  <p>Большинство едет в гранд каньон и толпится там</p>
+              <div class="features-items-block">
+                <div class="feature-item">
+                    <b class="lead">Небольшая площадь</b>
+                    <p>- №3 -</p>
+                    <p>Все достопримечательности находятся очень близко</p>
+                </div>
+                <div class="feature-item">
+                    <b class="lead">Красивая дорога</b>
+                    <p>- №4 -</p>
+                    <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+                </div>
+                <div class="feature-item">
+                    <b class="lead">Мало туристов</b>
+                    <p>- №5 -</p>
+                    <p>Большинство едет в гранд каньон и толпится там</p>
+                </div>
               </div>
           </section>
           <section class="search-hotel">
@@ -78,21 +79,21 @@
               <a href="hotels.html" class="btn search-hotel-btn">Поиск гостиницы в Седоне</a>
               <div class="search-hotel-form">
                 <form action="https://htmlacademy.ru/echo" method="POST">
-                  <div class="search-hotel-form-date-in">
-                    <label for="search-hotel-form-date-in">Дата заезда:</label>
-                    <input type="text" id="search-hotel-form-date-field-in" name="search-hotel-form-date-in-field" value="24 апреля 2017">
-                    <span class="search-hotel-form-calendar-icon"></span>
+                  <div class="date-in-block">
+                    <label for="hotel-date-in">Дата заезда:</label>
+                    <input type="text" id="hotel-date-in" name="hotel-date-in-field" value="24 апреля 2017">
+                    <span class="hotel-date-in-calendar-icon"></span>
                   </div>
-                  <div class="search-hotel-form-date-out">
-                    <label for="search-hotel-form-date-out">Дата выезда:</label>
-                    <input type="text" id="search-hotel-form-date-field-out" name="search-hotel-form-date-out-field" value="4 июля 2017">
-                    <span class="search-hotel-form-calendar-icon"></span>
+                  <div class="date-out-block">
+                    <label for="hotel-date-out">Дата выезда:</label>
+                    <input type="text" id="hotel-date-out" name="hotel-date-out-field" value="4 июля 2017">
+                    <span class="hotel-date-out-calendar-icon"></span>
                   </div>
-                  <div class="search-hotel-form-persons-num">
-                    <label for="search-hotel-form-persons-num-adults">Взрослые:</label>
-                    <input type="number" id="search-hotel-form-persons-num-adults" name="search-hotel-form-persons-num-adults-field" value="2">
-                    <label for="search-hotel-form-persons-num-childs">Дети:</label>
-                    <input type="number" id="search-hotel-form-persons-num-childs" name="search-hotel-form-persons-num-childs-field" value="0">
+                  <div class="persons-num">
+                    <label for="persons-num-adults">Взрослые:</label>
+                    <input type="number" id="persons-num-adults" name="persons-num-adults-field" value="2">
+                    <label for="persons-num-childs">Дети:</label>
+                    <input type="number" id="persons-num-childs" name="persons-num-childs-field" value="0">
                   </div>
                   <button type="submit" name="search-hotel-form-submit">Найти</button>
                 </form>
