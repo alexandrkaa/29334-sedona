@@ -2,6 +2,9 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Седона</title>
   </head>
   <body>
@@ -11,7 +14,7 @@
                   <li><a href="information.html">Информация</a></li>
                   <li><a href="photo-video.html">Фото и видео</a></li>
                   <li><a href="map.html">Карта штата</a></li>
-                  <li class="site-navigation-active-item"><a href="hotels.html">Гостиницы</a></li>
+                  <li><a class="active" href="hotels.html">Гостиницы</a></li>
               </ul>
               <a href="index.html" class="main-header-logo"><img src="img/main-header-logo.png" width="138" height="70" alt="Логотип Седона"></a>
           </nav>
@@ -80,21 +83,21 @@
               <p>Сортировка:</p>
               <ul class="sort-list">
                   <li class="sort-list-item">
-                      <button type="button" class="button-sort button-sort-price active">По цене</button>
+                      <a href="#" class="button-sort sort-price active">По цене</a>
                   </li>
                   <li class="sort-list-item">
-                      <button type="button" class="button-sort button-sort-type">По типу</button>
+                      <a href="#" class="button-sort sort-type">По типу</a>
                   </li>
                   <li class="sort-list-item">
-                      <button type="button" class="button-sort button-sort-rate">По рейтингу</button>
+                      <a href="#" class="button-sort sort-rate">По рейтингу</button>
                   </li>
               </ul>
               <ul class="sort-list-direction">
                   <li class="sort-list-direction-item">
-                      <button type="button" class="button-sort-direction button-sort-direction-up">По возрастанию</button>
+                      <a href="#" class="button-sort-direction sort-direction-up">По возрастанию</a>
                   </li>
                   <li class="sort-list-direction-item">
-                      <button type="button" class="button-sort-direction button-sort-direction-down active">По убыванию</button>
+                      <a href="#" class="button-sort-direction sort-direction-down active">По убыванию</a>
                   </li>
               </ul>
           </section>
