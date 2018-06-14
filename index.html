@@ -35,15 +35,15 @@
               </div>
               <div class="hints">
                   <h3 class="visually-hidden">Рекомендации</h3>
-                  <div class="hint-item">
+                  <div class="hint-item house">
                       <b class="lead">Жильё</b>
                       <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
                   </div>
-                  <div class="hint-item">
+                  <div class="hint-item food">
                       <b class="lead">Еда</b>
                       <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
                   </div>
-                  <div class="hint-item">
+                  <div class="hint-item souvenirs">
                       <b class="lead">Сувениры</b>
                       <p>Не только китайского, но и местного производства!</p>
                   </div>
@@ -54,22 +54,20 @@
                   <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
                   <img src="img/devils-bridge.jpg" width="800" height="256" alt="Фото мост дьявола">
               </div>
-              <div class="features-items-block">
-                <div class="feature-item">
-                    <b class="lead">Небольшая площадь</b>
-                    <p>- №3 -</p>
-                    <p>Все достопримечательности находятся очень близко</p>
-                </div>
-                <div class="feature-item">
-                    <b class="lead">Красивая дорога</b>
-                    <p>- №4 -</p>
-                    <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-                </div>
-                <div class="feature-item">
-                    <b class="lead">Мало туристов</b>
-                    <p>- №5 -</p>
-                    <p>Большинство едет в гранд каньон и толпится там</p>
-                </div>
+              <div class="feature-item small-block">
+                  <b class="lead">Небольшая площадь</b>
+                  <p>- №3 -</p>
+                  <p>Все достопримечательности находятся очень близко</p>
+              </div>
+              <div class="feature-item small-block">
+                  <b class="lead">Красивая дорога</b>
+                  <p>- №4 -</p>
+                  <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+              </div>
+              <div class="feature-item small-block">
+                  <b class="lead">Мало туристов</b>
+                  <p>- №5 -</p>
+                  <p>Большинство едет в гранд каньон и толпится там</p>
               </div>
           </section>
           <section class="search-hotel">
@@ -79,26 +77,26 @@
                   Укажите предполагаемые даты поездки,<br>
                   и мы покажем вам лучшие предложения гостиниц в седоне
               </p>
-              <a href="hotels.html" class="btn search-hotel-btn">Поиск гостиницы в Седоне</a>
+              <a href="hotels.html" class="search-hotel-btn">Поиск гостиницы в Седоне</a>
               <div class="search-hotel-form">
                 <form action="https://htmlacademy.ru/echo" method="POST">
                   <div class="date-in-block">
                     <label for="hotel-date-in">Дата заезда:</label>
-                    <input type="text" id="hotel-date-in" name="hotel-date-in-field" value="24 апреля 2017">
+                    <input class="search-hotel-input date-input" type="text" id="hotel-date-in" name="hotel-date-in-field" value="24 апреля 2017">
                     <span class="hotel-date-in-calendar-icon"></span>
                   </div>
                   <div class="date-out-block">
                     <label for="hotel-date-out">Дата выезда:</label>
-                    <input type="text" id="hotel-date-out" name="hotel-date-out-field" value="4 июля 2017">
+                    <input class="search-hotel-input date-input" type="text" id="hotel-date-out" name="hotel-date-out-field" value="4 июля 2017">
                     <span class="hotel-date-out-calendar-icon"></span>
                   </div>
                   <div class="persons-num">
                     <label for="persons-num-adults">Взрослые:</label>
-                    <input type="number" id="persons-num-adults" name="persons-num-adults-field" value="2">
+                    <input class="search-hotel-input persons-num-input" type="number" id="persons-num-adults" name="persons-num-adults-field" value="2">
                     <label for="persons-num-childs">Дети:</label>
-                    <input type="number" id="persons-num-childs" name="persons-num-childs-field" value="0">
+                    <input class="search-hotel-input persons-num-input" type="number" id="persons-num-childs" name="persons-num-childs-field" value="0">
                   </div>
-                  <button type="submit" name="search-hotel-form-submit">Найти</button>
+                  <button class="submit-btn" type="submit" name="search-hotel-submit">Найти</button>
                 </form>
               </div>
           </section>
@@ -111,10 +109,10 @@
       <footer class="main-footer">
           <div class="footer-social-hashtag"><b class="lead">#visitSEDONA</b></div>
           <div class="footer-social">
-              <ul class="social-list">
-                  <li class="social-item"><a href="#" class="btn social-btn-twitter">Twitter</a></li>
-                  <li class="social-item"><a href="#" class="btn social-btn-facebook">FaceBook</a></li>
-                  <li class="social-item"><a href="#" class="btn social-btn-youtube">YouTube</a></li>
+              <ul>
+                  <li><a href="#" class="social-btn twitter">Twitter</a></li>
+                  <li><a href="#" class="social-btn facebook">FaceBook</a></li>
+                  <li><a href="#" class="social-btn youtube">YouTube</a></li>
               </ul>
           </div>
           <div class="copyright">
