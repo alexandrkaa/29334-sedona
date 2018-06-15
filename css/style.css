@@ -175,7 +175,7 @@ body {
   outline: 0;
 }
 
-/* search hotels form hotels page */
+/* search form hotels page */
 
 .search-hotel-form {
   color: #ffffff;
@@ -189,7 +189,21 @@ body {
   font-weight: bold;
 }
 
-/* search results sort hotels page */
+.search-hotel-form .submit-btn {
+  background-color: transparent;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+.search-hotel-form .submit-btn:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* results sort hotels page */
 
 .search-results-sort .results-count {
   font-size: 21px;
@@ -198,7 +212,7 @@ body {
 
 }
 
-.search-results-sort .sort-list {
+.sort-list-direction, .sort-list {
   list-style: none;
 }
 
@@ -246,6 +260,7 @@ body {
   font-weight: bold;
   color: #ffffff;
   background-color: #81b3d2;
+  text-decoration: none;
 }
 .search-results-hotel .button-hotel-description:hover {
   background-color: #669ec0;
@@ -255,6 +270,30 @@ body {
   background-color: #5496bd;
   color: rgba(255, 255, 255, 0.3);
   outline: 0;
+}
+
+.search-results-hotel .button-hotel-book {
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #766357;
+  text-decoration: none;
+}
+.search-results-hotel .button-hotel-book:hover {
+  background-color: #604e43;
+}
+
+.search-results-hotel .button-hotel-book:active, .search-results-hotel .button-hotel-book:focus {
+  background-color: #503e33;
+  color: rgba(255, 255, 255, 0.3);
+  outline: 0;
+}
+
+.search-results-hotel .hotel-rating {
+  list-style: none;
+}
+
+.hotel-rating .star {
+  color: #81b3d2;
 }
 
 /* footer */
@@ -269,6 +308,14 @@ body {
 
 .footer-social .social-btn {
   background: #81b3d2 no-repeat center center;
+}
+
+.footer-social .social-btn:hover {
+  background-color: #669ec0;
+}
+
+.footer-social .social-btn:active, .footer-social .social-btn:focus {
+  background-color: #5496bd;
 }
 
 .social-btn.twitter {
