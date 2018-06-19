@@ -20,9 +20,9 @@
           </nav>
       </header>
       <main class="container">
-          <img src="img/sedona-intro-1200.jpg" width="1200" height="508" alt="Интро-заставка с изображением гор">
+          <img class="intro-image" src="img/sedona-intro-1200.jpg" width="1200" height="508" alt="Интро-заставка с изображением гор">
           <div class="intro">
-            <h1>Седона - небольшой городок в Аризоне, заслуживающий большего</h1>
+            <h1>Седона - небольшой городок в Аризоне,<br>заслуживающий большего</h1>
             <p class="lead">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
           </div>
           <section class="features">
@@ -77,8 +77,8 @@
                   Укажите предполагаемые даты поездки,<br>
                   и мы покажем вам лучшие предложения гостиниц в седоне
               </p>
-              <a href="hotels.html" class="search-hotel-btn">Поиск гостиницы в Седоне</a>
-              <div class="search-hotel-form">
+              <a href="hotels.html" class="search-hotel-btn"><span>Поиск гостиницы в Седоне</span></a>
+              <div class="search-hotel-popup-form">
                 <form action="https://htmlacademy.ru/echo" method="POST">
                   <div class="date-in-block">
                     <label for="hotel-date-in">Дата заезда:</label>
@@ -96,7 +96,9 @@
                     <label for="persons-num-childs">Дети:</label>
                     <input class="search-hotel-input persons-num-input" type="number" id="persons-num-childs" name="persons-num-childs-field" value="0">
                   </div>
-                  <button class="submit-btn" type="submit" name="search-hotel-submit">Найти</button>
+                  <button class="submit-btn" type="submit" name="search-hotel-submit">
+                    <span>Найти</span>
+                  </button>
                 </form>
               </div>
           </section>
@@ -117,7 +119,7 @@
           </div>
           <div class="copyright">
               <p>Website by</p>
-              <a href="http://htmlacademy.ru"><img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип htmlacademy.ru"></a>
+              <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип htmlacademy.ru"></a>
           </div>
       </footer>
   </body>
