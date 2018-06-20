@@ -482,6 +482,12 @@ img {
   outline: 0;
 }
 
+.copyright {
+  display: flex;
+    justify-content: space-between;
+    width: 197px;
+}
+
 .copyright-logo:hover path {
   fill: #81b3d2;
 }
