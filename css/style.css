@@ -441,6 +441,7 @@ body {
   margin-left: -600px;
   width: 1200px;
   min-height: 120px;
+  margin-top: -120px;
 }
 
 .main-footer div {
