@@ -16,9 +16,6 @@ body {
   background-color: #ffffff;
 
   box-sizing: inherit;
-
-  /*Убрать потом и обернуть все в отдельный div 1200px*/
-  /* width: 1200px; */
 }
 
 .visually-hidden {
@@ -35,6 +32,11 @@ body {
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 .main-header, .container, .main-footer {
@@ -182,7 +184,7 @@ body {
 
 .feature-item .feature-text-wrapper {
     text-align: center;
-    padding-top: 51px;
+    padding-top: 48px;
 }
 
 .feature-text-wrapper p {
@@ -442,10 +444,6 @@ body {
   width: 1200px;
   min-height: 120px;
   margin-top: -120px;
-}
-
-.main-footer div {
-  /* text-align: center; */
 }
 
 .footer-social-hashtag {
