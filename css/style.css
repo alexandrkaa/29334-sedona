@@ -106,7 +106,7 @@ img {
 }
 
 .container .intro-image {
-  margin-bottom: 55px;
+  margin-bottom: 60px;
 }
 
 .intro {
@@ -218,14 +218,28 @@ img {
 
 /* search hotel main page form */
 
+.search-hotel {
+  min-height: 292px;
+  padding-top: 52px;
+  text-align: center;
+  position: relative;
+}
+
+.search-hotel p {
+  margin: 25px 0;
+  padding: 0;
+  line-height: 24px;
+}
+
+.search-hotel p:last-of-type {
+  margin-bottom: 0;
+}
+
 .search-hotel .lead {
   font-size: 30px;
   line-height: 36px;
   color: #000000;
   font-weight: bold;
-}
-.search-hotel p:not(.lead) {
-  line-height: 24px;
 }
 
 .search-hotel .search-hotel-btn {
@@ -241,6 +255,48 @@ img {
   text-decoration: none;
   padding-top: 33px;
   padding-bottom: 31px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -284px;
+}
+
+.search-hotel-popup-form {
+  position: absolute;
+  width: 568px;
+  min-height: 395px;
+  bottom: -395px;
+  left: 50%;
+  margin-left: -284px;
+  text-align: center;
+  z-index: 1;
+  padding: 50px 55px;
+  background-color: #ffffff;
+}
+
+.search-hotel-popup-form .popup-form-input-block.persons-num {
+  width: 100%;
+  max-width: 229px;
+  float: left;
+}
+
+.popup-form-input-block {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.popup-form-input-block.persons-num input {
+  width: 114px;
+}
+
+.search-hotel-popup-form label {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
 }
 
 .search-hotel .search-hotel-btn:hover {
@@ -254,12 +310,17 @@ img {
 }
 
 .search-hotel-popup-form .search-hotel-input {
-  font-weight: bold;
+  font-size: 14px;
   line-height: 26px;
   text-align: left;
+  font-weight: bold;
   color: #000000;
   background-color: #f2f2f2;
   border: 0;
+  padding: 10px;
+  height: 38px;
+  width: 346px;
+  vertical-align: middle;
 }
 
 .search-hotel-popup-form .search-hotel-input:hover {
@@ -440,6 +501,7 @@ img {
   width: 1200px;
   min-height: 120px;
   margin-top: -120px;
+  z-index: 1;
 }
 
 .footer-social-hashtag {
