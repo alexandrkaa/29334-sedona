@@ -377,6 +377,7 @@ label[for="persons-num-childs"] {
   background: #4d7fa9 url('../img/filter-background.jpg') no-repeat right center;
   background-size: 100%;
   min-height: 217px;
+  padding: 0 72px;
 }
 
 .search-hotel-form form {
@@ -387,11 +388,57 @@ label[for="persons-num-childs"] {
   font-size: 16px;
   line-height: 21px;
   font-weight: bold;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
-.infrastructure h3 {
-  margin: 0;
+.search-form-checkbox input[type="checkbox"] + .checkbox-indicator {
+  width: 27px;
+  height: 23px;
+  display: block;
+  background: url('../img/checkbox-off.png') no-repeat;
+  margin-right: 13px;
+}
+
+.search-form-checkbox input[type="checkbox"]:checked + .checkbox-indicator {
+  background-image: url('../img/checkbox-on.png');
+}
+
+.search-form-checkbox input[type="checkbox"]:disabled + .checkbox-indicator {
+  background-image: url('../img/checkbox-off-3.png');
+}
+
+.search-form-checkbox input[type="checkbox"]:checked:disabled + .checkbox-indicator {
+  background-image: url('../img/checkbox-on-2.png');
+}
+
+.infrastructure,
+.housing-type {
+  display: flex;
+  flex-direction: column;
+  padding: 12px 0;
+  align-items: flex-start;
+}
+
+.infrastructure {
+  width: 254px;
+}
+
+.infrastructure label, .housing-type label{
+  display: flex;
+  align-items: center;
+  margin-bottom: 22px;
+}
+
+.infrastructure label:last-of-type, .housing-type label:last-of-type {
+  margin-bottom: 0;
+}
+
+.housing-type {
+  width: 484px;
+}
+
+.price {
+  width: 318px;
 }
 
 .search-hotel-form .submit-btn {
@@ -411,7 +458,7 @@ label[for="persons-num-childs"] {
 /* results sort hotels page */
 
 .search-results-sort {
-  min-height: 86px;
+  min-height: 89px;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
@@ -436,6 +483,9 @@ label[for="persons-num-childs"] {
   margin-right: 49px;
 }
 
+.search-results-sort p {
+  margin: 0;
+}
 .sort-list {
   margin-right: auto;
   display: flex;
@@ -503,8 +553,8 @@ label[for="persons-num-childs"] {
 
 .search-results-hotel {
   border-bottom: 1px solid #e5e5e5;
-  padding: 30px 0;
-  padding-top: 27px;
+  padding-bottom: 30px;
+  padding-top: 26px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -564,7 +614,7 @@ label[for="persons-num-childs"] {
   height: 27px;
   background-color: #f2f2f2;
   color: #666666;
-  padding: 5px;
+  padding: 4px;
   text-align: center;
 }
 
@@ -574,7 +624,6 @@ label[for="persons-num-childs"] {
   margin: 0;
   display: flex;
   justify-content: flex-end;
-  margin-top: 3px;
 }
 
 .hotel-rating .star {
@@ -588,9 +637,7 @@ label[for="persons-num-childs"] {
 .search-results-hotel .button {
   height: 27px;
   text-align: center;
-  vertical-align: top;
-  padding-top: 5px;
-  padding-bottom: 4px;
+  padding: 4px 0;
   font-weight: bold;
   color: #ffffff;
   text-decoration: none;
@@ -701,6 +748,7 @@ label[for="persons-num-childs"] {
 
 .copyright-logo {
   margin-left: 8px;
+  margin-top: 6px;
 }
 
 .copyright-logo:hover path {
