@@ -5,7 +5,6 @@ html {
   box-sizing: inherit;
 }
 body {
-  margin: 0;
   padding: 0;
   font-family: 'PT Sans', Arial, sans-serif;
   font-size: 14px;
@@ -223,7 +222,7 @@ img {
   padding-top: 52px;
   text-align: center;
   position: relative;
-  padding-bottom: 136px;
+  padding-bottom: 130px;
 }
 
 .search-hotel p {
@@ -276,11 +275,6 @@ img {
   box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
 }
 
-.search-hotel-popup-form .popup-form-input-block.persons-num {
-  width: 100%;
-  margin-bottom: 53px;
-}
-
 .popup-form-input-block {
   display: flex;
   justify-content: space-between;
@@ -288,6 +282,10 @@ img {
   align-items: center;
   width: 100%;
   margin-bottom: 30px;
+}
+
+.popup-form-input-block:last-of-type {
+  margin-bottom: 53px;
 }
 
 .popup-form-input-block.persons-num input {
@@ -324,16 +322,89 @@ img {
   vertical-align: middle;
 }
 
-label[for="persons-num-adults"] {
-  margin-right: 40px;
+.persons-num-label input[type=number]::-webkit-inner-spin-button,
+.persons-num-label input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
-.persons-num-input:first-of-type {
-  margin-right: 53px;
+.persons-num {
+  width: calc(458px /2);
+  position: relative;
 }
 
-label[for="persons-num-childs"] {
-  margin-right: 27px;
+.persons-num-label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.persons-num label[for="persons-num-childs"] {
+  padding-left: 50px;
+}
+
+.popup-form-input-block .minus,
+.popup-form-input-block .plus {
+  display: block;
+  position: absolute;
+  width: 38px;
+  height: 38px;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  background-color: #f2f2f2;
+  z-index: 2;
+}
+
+.popup-form-input-block .minus:hover::before,
+.popup-form-input-block .plus:hover::before,
+.popup-form-input-block .plus:hover::after {
+  background-color: #000000;
+}
+
+.popup-form-input-block .minus:active::before,
+.popup-form-input-block .minus:focus::before,
+.popup-form-input-block .plus:active::before,
+.popup-form-input-block .plus:focus::before,
+.popup-form-input-block .plus:active::after,
+.popup-form-input-block .plus:focus::after {
+  background-color: #81b3d2;
+}
+
+.popup-form-input-block .minus {
+  left: 115px;
+}
+
+.popup-form-input-block .plus {
+  right: 0;
+  bottom: 0;
+}
+
+.popup-form-input-block .minus::before,
+.popup-form-input-block .plus::before {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 3px;
+  top: 17px;
+  left: 13px;
+  background-color: #a9a9a9;
+}
+
+.popup-form-input-block .plus::after {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 12px;
+  top: 13px;
+  left: 17px;
+  background-color: #a9a9a9;
+}
+
+.search-hotel-popup-form .persons-num-input {
+  text-align: center;
+  width: 114px;
 }
 
 .search-hotel-popup-form .search-hotel-input:hover {
