@@ -64,15 +64,17 @@
                   </div>
                   <div class="price">
                       <h3>Стоимость в сутки (Р):</h3>
-                      <!-- Элементы формы -->
-                      <label for="price-from-output" class="visually-hidden">Цена в сутки от</label>
-                      <input type="text" name="price-from-output" placeholder="От 0">
-                      <label for="price-to-output" class="visually-hidden">Цена в сутки до</label>
-                      <input type="text" name="price-to-output" placeholder="До 3000">
-                      <div class="price-range">
-                        <span class="range-handle"></span>
-                        <span class="range-handle"></span>
+                      <div class="price-controls">
+                        <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+                        <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
                       </div>
+                      <div class="range-controls">
+                      <div class="scale">
+                        <div class="bar"></div>
+                      </div>
+                      <div class="range-toggle range-toggle-min"></div>
+                      <div class="range-toggle range-toggle-max"></div>
+                    </div>
                       <button class="submit-btn" type="submit" name="search-hotel-form-submit">Показать</button>
                   </div>
               </form>

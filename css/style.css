@@ -223,6 +223,7 @@ img {
   padding-top: 52px;
   text-align: center;
   position: relative;
+  padding-bottom: 136px;
 }
 
 .search-hotel p {
@@ -339,7 +340,8 @@ label[for="persons-num-childs"] {
   background-color: #ebebeb;
 }
 
-.search-hotel-popup-form .search-hotel-input:active, .search-hotel-popup-form .search-hotel-input:focus {
+.search-hotel-popup-form .search-hotel-input:active,
+.search-hotel-popup-form .search-hotel-input:focus {
   background-color: #ffffff;
   border: solid 2px #e5e5e5;
   outline: 0;
@@ -364,7 +366,8 @@ label[for="persons-num-childs"] {
   background-color: #669ec0;
 }
 
-.search-hotel-popup-form  .submit-btn:active, .search-hotel-popup-form .submit-btn:focus {
+.search-hotel-popup-form  .submit-btn:active,
+.search-hotel-popup-form .submit-btn:focus {
   background-color: #5496bd;
   color: rgba(255, 255, 255, 0.3);
   outline: 0;
@@ -374,7 +377,7 @@ label[for="persons-num-childs"] {
 
 .search-hotel-form {
   color: #ffffff;
-  background: #4d7fa9 url('../img/filter-background.jpg') no-repeat right center;
+  background: #647d93 url('../img/filter-background.jpg') no-repeat right center;
   background-size: 100%;
   min-height: 217px;
   padding: 0 72px;
@@ -388,6 +391,7 @@ label[for="persons-num-childs"] {
   font-size: 16px;
   line-height: 21px;
   font-weight: bold;
+  margin: 0;
   margin-bottom: 25px;
 }
 
@@ -415,8 +419,12 @@ label[for="persons-num-childs"] {
 .housing-type {
   display: flex;
   flex-direction: column;
-  padding: 12px 0;
+  padding: 27px 0;
   align-items: flex-start;
+}
+
+.price {
+  padding: 27px 0;
 }
 
 .infrastructure {
@@ -441,13 +449,120 @@ label[for="persons-num-childs"] {
   width: 318px;
 }
 
+.price h3 {
+  margin-bottom: 9px;
+  font-weight: bold;
+}
+
+.range-controls {
+  width: 318px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.price-controls {
+  position: relative;
+  height: 34px;
+  margin-bottom: 20px;
+  font-size: 0;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  box-sizing: content-box;
+}
+
+.price-controls::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 2px;
+  height: 22px;
+
+  background: #ffffff;
+  transform: translate(-50%, -50%);
+}
+
+.price-controls label {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 38px;
+  vertical-align: top;
+  cursor: pointer;
+}
+
+.price-controls .min-price {
+  width: 90px;
+  padding-left: 65px;
+}
+
+.price-controls .max-price {
+  width: 90px;
+  padding-left: 57px;
+}
+
+.price-controls input {
+  width: 50px;
+  margin: 0;
+  padding: 0;
+  color: inherit;
+  font: inherit;
+  background: none;
+  border: none;
+}
+
+.range-controls {
+  position: relative;
+  margin-bottom: 31px;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+  background: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  top: -9px;
+  width: 20px;
+  height: 20px;
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range-toggle-min {
+  left: 0;
+}
+
+.range-toggle-max {
+  left: 80%;
+}
+
+.range-toggle:hover {
+  background: #1c4f80;
+}
+
 .search-hotel-form .submit-btn {
+  display: block;
+  margin: 0 auto 0 86px;
+  padding: 6px 35px;
+  cursor: pointer;
   background-color: transparent;
   color: #ffffff;
   border: 2px solid #ffffff;
+  border-radius: 2px;
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
+  width: 137px;
 }
 
 .search-hotel-form .submit-btn:hover {
