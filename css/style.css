@@ -39,12 +39,6 @@ img {
   display: block;
 }
 
-/* BUG: IE 11 not centred */
-/* .main-header, .container, .main-footer {
-  width: 1200px;
-  margin: 0 auto;
-} */
-
 /* navigation */
 
 .main-header {
@@ -917,6 +911,16 @@ img {
 .search-results-hotel .button-hotel-book:focus {
   background-color: #503e33;
   color: rgba(255, 255, 255, 0.3);
+}
+
+/* map */
+.map {
+  position: relative;
+}
+.map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 /* footer */
