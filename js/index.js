@@ -1,6 +1,13 @@
-var searchHotelButton = document.querySelector('.search-hotel .search-hotel-btn');
-var searchHotelPopUpForm = document.querySelector('.search-hotel-popup-form');
-searchHotelButton.addEventListener( "click" , function(e) {
+function showForm(e) {
+  var form = document.querySelector('.search-hotel-popup-form');
   e.preventDefault();
-  searchHotelPopUpForm.classList.toggle("open");
-});
+
+  if (form.classList.contains('open')) {
+    form.classList.remove('open')
+  } else {
+    form.classList.add('open')
+  }
+}
+
+var btn = document.querySelector('.search-hotel .search-hotel-btn');
+btn.addEventListener('click', showForm);

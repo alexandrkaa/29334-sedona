@@ -1,4 +1,5 @@
 /* TODO: Минифицировать CSS и JS */
+/* TODO: кнопку открытия popup сделать margin 0 auto и отталкивать ее контентом */
 html {
   box-sizing: border-box;
   background-color: #f2f2f2;
@@ -260,11 +261,13 @@ img {
   padding: 55px;
   background-color: #ffffff;
   box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
-  transform: scale(1, 0);
+  transform: scale(0);
+  transition: transform .5s linear .2s;
 }
 
 .search-hotel-popup-form.open {
-  transform: scale(1, 1);
+  transform: scale(1);
+  transition: transform .5s linear .2s;
 }
 
 .popup-form-input-block {
