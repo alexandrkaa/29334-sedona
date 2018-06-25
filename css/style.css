@@ -1,3 +1,5 @@
+/* TODO: style.min.css */
+/* TODO: ie11 bugfix */
 html {
   box-sizing: border-box;
   background-color: #f2f2f2;
@@ -263,7 +265,7 @@ img {
   width: 568px;
   height: 86px;
   text-align: center;
-  /* text-decoration: none; */
+  text-decoration: none;
   padding-top: 33px;
   padding-bottom: 31px;
   position: absolute;
@@ -443,6 +445,7 @@ img {
 .search-hotel-popup-form .persons-num-input {
   text-align: center;
   width: 114px;
+  padding-right: 12px;
 }
 
 .search-hotel-popup-form .search-hotel-input:hover {
