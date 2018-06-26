@@ -118,7 +118,8 @@ img {
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
-  margin-bottom: 26px;
+  margin: 0 auto 26px auto;
+  max-width: 440px;
 }
 
 .intro p {
@@ -152,6 +153,19 @@ img {
   width: 1200px;
 }
 
+.big-block:first-of-type .lead {
+  display: block;
+  max-width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.big-block:first-of-type p {
+  margin: 22px auto;
+  max-width: 280px;
+
+}
+
 .feature-item.small-block {
   background-color: #eeeeee;
   min-height: 256px;
@@ -165,7 +179,25 @@ img {
 }
 
 .feature-item.small-block p {
-  margin: 20px 0;
+  margin: 23px auto;
+}
+
+.small-block .lead {
+  display: block;
+  margin: 0 auto;
+  max-width: 150px;
+}
+
+.small-block.square p {
+  max-width: 210px;
+}
+
+.small-block.road p {
+  max-width: 262px;
+}
+
+.small-block.tourists p {
+  max-width: 247px;
 }
 
 .big-block-reverse .feature-text-wrapper {
@@ -179,6 +211,12 @@ img {
 
 .feature-text-wrapper p {
   margin: 20px 0;
+}
+
+.big-block-reverse p:last-of-type {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 303px;
 }
 
 .hints {
@@ -195,7 +233,7 @@ img {
 }
 
 .hint-item p {
-  margin: 21px 0 0 0;
+  margin: 21px auto 0 auto;
 }
 
 .hint-item.house {
@@ -208,6 +246,18 @@ img {
 
 .hint-item.souvenirs {
   background: #ffffff url('../img/hints-souvenirs.svg') no-repeat center 57px;
+}
+
+.hint-item.house p {
+  max-width: 252px;
+}
+
+.hint-item.food p {
+  max-width: 285px;
+}
+
+.hint-item.souvenirs p {
+  max-width: 273px;
 }
 
 .search-hotel {
@@ -682,7 +732,7 @@ input[type="checkbox"]:checked:disabled + .checkbox-indicator {
 }
 
 .search-results-sort {
-  min-height: 89px;
+  min-height: 87px;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
@@ -869,7 +919,8 @@ input[type="checkbox"]:checked:disabled + .checkbox-indicator {
 
 .hotel-rating .star {
   color: #81b3d2;
-  margin-left: 5px;
+  margin-left: 5.5px;
+  margin-top: 1px;
   width: 18px;
   height: 17px;
   background: url('../img/star.svg') no-repeat;
@@ -953,7 +1004,7 @@ input[type="checkbox"]:checked:disabled + .checkbox-indicator {
   margin: 0 auto;
 }
 
-.main-footer div {
+.main-footer .footer-block  {
   width: 400px;
   text-align: center;
 }
@@ -964,7 +1015,7 @@ input[type="checkbox"]:checked:disabled + .checkbox-indicator {
   font-weight: bold;
 }
 
-.footer-social ul {
+.footer-social .social-container {
   list-style: none;
   display: flex;
   justify-content: space-between;
